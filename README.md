@@ -100,3 +100,21 @@ FLAG{
 FLAG (encrypted)(hex)    : 7d 56 18 43 15 67 0f 0a 1c 28 3b 76 05 30 00 50 54 0c 59 09 1f 7d 0d 3a 02 7a 08 7e 01 40 57 60 11 3e 05 2d 05 0f 00 00 06 55 30
 }
 ```
+
+`r2 ./SelfReference`
+
+```s
+[0x080485f0]> aa
+[x] Analyze all flags starting with sym. and entry0 (aa)
+[0x080485f0]> aac
+[0x080485f0]> afl
+0x080485f0    1 33           entry0
+0x08048580    1 6            sym.imp.__libc_start_main
+0x080484e0    1 6            sym.imp.strcmp
+0x080484f0    1 6            sym.imp.printf
+0x08048500    1 6            sym.imp.free
+0x08048510    1 6            sym.imp.fgets
+0x08048520    1 6            sym.imp.__stack_chk_fail
+0x08048530    1 6            sym.imp.fseek
+0x08048540    1 6            sym.imp.puts
+```
