@@ -103,7 +103,7 @@ FLAG (encrypted)(hex)    : 7d 56 18 43 15 67 0f 0a 1c 28 3b 76 05 30 00 50 54 0c
 
 `r2 ./SelfReference`
 
-```s
+```sh
 [0x080485f0]> aa
 [x] Analyze all flags starting with sym. and entry0 (aa)
 [0x080485f0]> aac
